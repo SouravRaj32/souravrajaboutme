@@ -130,6 +130,15 @@
     font-size: 1rem;
     line-height: 2.4rem
         }
+        .programming-languages-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.programming-languages-list li:nth-child(3) {
+  break-before: column;
+}
         a
         {
             text-decoration: none;
@@ -204,38 +213,38 @@
                     <strong style="font-family: 'Grandstander', cursive; font-size:50px;">About Me!</strong>
                 </center>
                 <br>
-                <img src="https://1.bp.blogspot.com/-KLxDNMI0tXE/X1ghwqlW5gI/AAAAAAAABcI/rYEB1_3k_UQthw26tXqguUoUT0zc6-kLQCLcBGAsYHQ/s0/k04.JPG" style="float:left ; height: 20vh; padding-right: 5%; padding-left: 10%;" >
-                <p style="font-size: 20px; justified" >I am final year CSE student from R.P Sharma Institute of Technology, Aryabhatta Knowledge University. I belong from Patna, Bihar.<br> I am interested in job related to software development, full stack <br>developement and Automation Engineer. </p><br>
+                <img src="https://drive.google.com/drive/folders/14ZFJoYXeQq-i3veZ3JDOciPkklvn18OU" style="float:left ; height: 20vh; padding-right: 5%; padding-left: 10%;" >
+                <p style="font-size: 20px; justified" >I am final year CSE student from R.P Sharma Institute of Technology, Aryabhatta Knowledge University. I belong from Patna, Bihar.<br> I am interested in job related to software development, Web development, Frontend development, Backend Development and full stack developement. </p><br>
             </div>
             <br>
             <br>
             <div class="info-list" style="margin-left: 14%; display: flex; ">
                 <div class="profile" style="float:left;">
-                    <h3>PROFILE</h3>
+                    <!-- <h3>PROFILE</h3>
                     <br>
                     <p>Currently working in Schlumberger <br>as Associate Test Engineer. Majorily <br>working on automating the test cases. </p>
-                    <br>
+                    <br> -->
                     
                     <ul type="none">
                         <li>
                             <strong >Full Name</strong>
                             <br>
-                            <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">Ujwal Prakash</span>
+                            <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">Sourav Raj</span>
                         </li>
                          <li>
                             <strong >DOB</strong>
                              <br>
-                             <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">02<sup style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">nd</sup> October, 2000</span>
+                             <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">07<sup style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">th</sup> October, 1999</span>
                         </li>
                          <li>
-                            <strong>JOB</strong>
+                            <!-- <strong>JOB</strong>
                              <br>
                             <span  style="font-family: 'Open Sans Condensed', sans-serif;font-size:20px">Associate Test Engineer </span>
                         </li>
-                         <li>
+                         <li> -->
                             <strong >Email</strong>
                              <br>
-                            <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">ujwalprakashsonu@gmail.com</span>
+                            <span style="font-family: 'Open Sans Condensed', sans-serif; font-size:20px">souravraj32@gmail.com</span>
                         </li>
                     </ul>
                 </div>
@@ -246,8 +255,8 @@
                     These are the skills that I have learned in college and in working experience.</p>
                     <br> <br>
                     <br>
-                    <ul class="skill-bars" type="none">
-                    <li><Strong>C++, C</Strong>
+                    <ul class="programming-languages-list" type="none">
+                    <li><Strong>C, C++</Strong>
                        
                         </li>
                         <li><Strong>Java</Strong>
@@ -259,13 +268,13 @@
                         <li><Strong>HTML+CSS</Strong>
                        
                         </li>
-                        <li><Strong>.Net/ C#</Strong>
+                        <li><Strong>JavaScript</Strong>
                        
                         </li>
                         <li><Strong>Python</Strong>
                        
                         </li>
-                      <li><Strong>UFT/Selenium</Strong>
+                      <li><Strong></Strong>
                        
                         </li>
                     </ul>
@@ -283,65 +292,85 @@
             <br>
                     
                     <li>
-                        <div class="card"><u><h2>Hostel Leave Management System:(3 members project)</h2></u>
+                        <div class="card">
+                            <u><h2>SouravBooking:(MERN Stack Hotel Booking App using React, Node.js and Mongodb )(Solo Project)</h2></u><h2><a href="https://souravbooking.onrender.com/" style="color:blue;text-decoration:underline;">Click To Try it↗</a> | <a href="https://github.com/SouravRaj32/SouravBooking-MERN-Web-App" style="color:blue;text-decoration:underline;">Github Link for Frontend↗</a> | <a href="https://github.com/SouravRaj32/SouravBooking-MERN-backend" style="color:blue;text-decoration:underline;">Github Link for Backend↗</a> | <a href="https://github.com/SouravRaj32/SouravBooking-Admin" style="color:blue;text-decoration:underline;">Github Link for Admin Panel↗</a></h2>
                             <br>
-                        <p>This Project is about the Leave approval for the VIT
-                            Bhopal student online. In this, a student can create their account
-                            using college mailed only and also to know their leave status. The
-                            students need to apply the leaves through their account. The
-                            proctors need to allow leave to the students and further by
-                            wardens.
-
-                        
-                        </p>
+                            <p>
+                                <ul>
+                                    <li>When a user selects a place and date to search for hotels, data will be fetched from <i>MongoDB</i> using the <i>backend API</i></li>
+                                    <li>The user can filter search results according to price range. When the user clicks on 'Book now', they will be redirected to the login page </li>
+                                    <li>After logging in, the user can search for and choose a hotel. They will be shown room options and available rooms.</li><li>The final price will be shown according to their selection. After clicking on 'Book now', the booking will be made. </li>
+                                    <li>Created <i>RestAPI</i>, provided security using <i>JWT</i>, Made <i>API request</i> using <i>cookies, custom hooks, React contextAPI</i>   </li>
+                                    <li>Created backend using <i>Node.js,Express.js</i> to perform <i>MongoDB CRUD</i> operations</li>
+                                    <li>Leveraged the <i>Axios library</i> for making HTTP requests and fetching data using<i> custom hooks</i> , allowing users to interact with the application in real-time.</li>
+                                    <li>Implemented React login authentication using <i>Context API and JWT</i>, ensuring that only authenticated users can access the application. Stored passwords as hash to ensure data privacy.</li>
+                                </ul>
+                            </p>
                         <br>
-                        <strong><em>Technologies: HTML/CSS, PHP, Javascript, MySQL</em></strong>
+                        <strong><em>Technologies: HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB</em></strong>
                         </div></li>
             <br>
-                        <li><div class="card"><u><h2>Professor Free Slot:(1 member project)</h2></u>
+                        <li><div class="card"><u><h2>SouravAdmin: Admin dashboard for SouravBooking ( Solo Project )</h2></u><h2><a href="https://souravbooking-admin.onrender.com/" style="color:blue;text-decoration:underline;">Click To Try it↗</a> | <a href="https://github.com/SouravRaj32/SouravBooking-Admin" style="color:blue;text-decoration:underline;">Github Link for Admin Panel of SouravBooking↗</a> 
                             <br>
-                        <p>Description: It is a webpage that shows the professor free slot
-                            by searching their name or by their employee id and it will
-                            display it in a tabular format.
+                        <p>
+                            <ul style="font-size: 16px;">
+                                <li>Users can log in and perform actions such as viewing, creating, and deleting users, hotels, and rooms according to their account privileges, whether they are an administrator or not</li>
+                                <!-- <li></li> -->
+                                <li>The user, hotels, and room data for my project is fetched from MongoDB. This admin panel is connected to backend API of SouravBooking </li>
+                                <li>API requests in the admin panel are made using custom hooks and React context API, with Axios used as the underlying HTTP library </li>
+                                <!-- <li>  </li>
+                                <li></li>
+                                <li></li>
+                                <li></li> -->
+                            </ul>
                         </p>
                         <br>
-                        <strong><em>Technologies: HTML/CSS, JavaScript, PHP, MySQL</em></strong>
+                        <strong style="font-size: 20px;"><em>Technologies: HTML, SCSS, JavaScript, React, Node.js, Express.js, MongoDB</em></strong>
                        
                             </div> </li>
             <br>
-                        <li><div class="card"><u><h2>Personal Website Other thans this:(1 member project)</h2></u>
+                        <li><div class="card"><u><h2>Sourav IT Solutions Website:( Solo Project )</h2></u><h2><a href="https://souravitsolutions.onrender.com/" style="color:blue;text-decoration:underline;">Click To Try it↗</a> | <a href="https://github.com/SouravRaj32/SouravITsolutions-website" style="color:blue;text-decoration:underline;">Github Link for Sourav IT Solutions↗</a> 
                             <br>
-                            <p>Description: It is a classroom Project, which is basically a webpage that shows my all personal
-                            achievements, my personal information and also I can store
-                            the other student information.
-                        
+                            <p>
+                                <ul style="font-size: 16px;">
+                                    <li>Created a website for my web development services company.</li>
+                                    <!-- <li></li> -->
+                                    <li>Potential clients can browse the services we offer, learn how to reach us, and fill out a contact form. Upon submission, the data will be stored in MongoDB. </li>
+                                  
+                                </ul>
                         </p>
                         <br>
-                        <strong><em>Technologies: HTML/CSS, PHP, Javascript, MySQL</em></strong>
+                        <strong style="font-size: 20px;"><em>Technologies: Handlebars, CSS, Bootstrap, Javascript, Node.js, Express.js, MongoDB </em></strong>
                        
                             </div> </li>
             <br>
-                        <li><div class="card"><u><h2>Food Delievery System:(1 member project)</h2></u>
+                        <li><div class="card"><u><h2>Sourav Dance Academy:( Solo project )</h2></u><h2><a href="https://souravitsolutions.onrender.com/" style="color:blue;text-decoration:underline;">Click To Try it↗</a> | <a href="https://github.com/SouravRaj32/SouravITsolutions-website" style="color:blue;text-decoration:underline;">Github Link for Sourav Dance Academy↗</a> 
                             <br>
-                        <p>Description: It is web based as well as netbeans project which
-allow ordering the food from the given Hotel Menu list and
-delivery person able to lock their one delivery order at a time.
-
+                        <p>
+                            <ul style="font-size: 16px;">
+                                <li>Created a website for a dance academy that serves as an online platform for potential customers to learn more about the academy.</li>
+                                <li>Implemented a "Contact Us" page that allows customers to fill out their details</li>
+                                <li>Integrated a MongoDB database to store the details provided by customers through the contact form </li>
+                              
+                            </ul>
                         
                         </p>
                         <br>
-                        <strong><em>Technologies: HTML/CSS, JavaScript, Netbeans, PHP, SQL</em></strong>
+                        <strong style="font-size: 20px;"><em>Technologies: Pug, CSS, JavaScript, Node.js, Express.js, MongoDB</em></strong>
                        
                             </div></li>
             <br>
-                        <li><div class="card"><u><h2>IoT based Security and Home Automation:(5 members)</h2></u>
+                        <li><div class="card"><u><h2>My Portfolio Website (This Website ):( Solo Project)</h2></u>
                             <br>
-                        <p>This is the home automation and security system using Arduino and NodeMcu. It has both WiFi and Bluetooth connectivity by which users can connect the system with their phones. It allows the person to make their home more automated and also provide security from any different kind of behavior taken place during their absence. They will be alert through SMS.
-
+                        <p><ul style="font-size: 16px;">
+                            <li>Created a website  where visitors can know more about me, my skills, my projects and download my resume</li>
+                            
+                          
+                        </ul>
                         
                         </p>
                         <br>
-                        <strong><em>Technologies: IoT, Arduino, NodeMcu, Arduino IDE</em></strong>
+                        <strong style="font-size: 20px;"><em>Technologies: HTML, CSS, JavaScript </em></strong>
                        
                             </div></li>
                        
@@ -352,7 +381,8 @@ delivery person able to lock their one delivery order at a time.
         <img src="https://1.bp.blogspot.com/-deDze_Ug9ys/X1iYoLqLzTI/AAAAAAAAHOs/pQ5nMC00BmYWkJFUmOfvpAG55Y79gTLBwCLcBGAsYHQ/s0/resumelogo.png" style="width:110px; height: 110px; float: center; padding: 2%"><br><button><a href="https://drive.google.com/file/d/18NLVnbvqqrvV1BUUx2NweL376011JmVf/view?usp=sharing">See My Resume</a></button></Center>
         </div>
         <div id="footer" style="background-color:#424242; ; position:relative; top:20%; padding-top: 2%;padding-bottom: 3%" style="display:flex">
-         <center>   This website is designed and code by Ujwal Prakash.<br>It is hosted by @alokprakashraeon.</center>
+         <center>   This website is designed and code by Sourav Raj.</center>
+         
         </div>
              
         
